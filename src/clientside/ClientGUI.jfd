@@ -1,0 +1,111 @@
+JFDML JFormDesigner: "6.0.2.0.116" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {par l {seq {space :p:167:p, comp label1:::p::p}, seq l {space :p:26:p, par l {comp panel1:::p:600:p, seq {par l {comp label2:::p::p, comp label3:::p::p}, space :p:18:p, par l {comp ipAddressTextField:::p:364:p, comp portNumTextField:::p:364:p}, space s:::p, comp connectButton:::p::p}}}}, space :::p, par l {seq {comp textField1:::p:272:p, space :::p, comp sendButton:::p:95:p}, comp scrollPane1:::p:373:p}, space :0:3:x}}"
+			"$verticalGroup": "par l {seq {space s:::p, comp label1:::p::p, space s:::p, par l {seq {comp scrollPane1::::513:x, space :::p, par b {comp textField1::b:p::p, comp sendButton::b:p::p}}, seq {par l {seq {par b {comp ipAddressTextField::b:p::p, comp label2::b:p::p}, space u:::p, par b {comp label3::b:p::p, comp portNumTextField::b:p::p}}, comp connectButton::l:p::p}, space :p:24:p, comp panel1::::467:x}}, space :::p}}"
+		} ) {
+			name: "this"
+			"font": new java.awt.Font( "Consolas", 3, 18 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Welcome To Huy, Le Tic Tac Toe!"
+				"font": new java.awt.Font( "Segoe UI", 0, 24 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Enter The IP Address:"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Enter The Port Number:"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "connectButton"
+				"text": "Connect"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "connectButtonActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "ipAddressTextField"
+				"text": "localhost"
+				"editable": false
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "portNumTextField"
+				"text": "5555"
+				"editable": false
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+				"columns": 3
+				"rows": 3
+			} ) {
+				name: "panel1"
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button1"
+					"enabled": false
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button2"
+					"enabled": false
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button3"
+					"enabled": false
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button3ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button4"
+					"enabled": false
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button4ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button5"
+					"enabled": false
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button5ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button6"
+					"enabled": false
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button6ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button7"
+					"enabled": false
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button7ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button8"
+					"enabled": false
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button8ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button9"
+					"enabled": false
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button9ActionPerformed", true ) )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "chatArea"
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField1"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "sendButton"
+				"text": "Send"
+				"enabled": false
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "sendButtonActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 10, 0 )
+			"size": new java.awt.Dimension( 1010, 645 )
+		} )
+	}
+}
